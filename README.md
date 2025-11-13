@@ -1,11 +1,10 @@
 # Experiment 4 – Create Rectangle Structure with Length and Breadth and Add Method to Calculate Area  
 
-<H3>ENTER YOUR NAME:</H3>  
-<H3>ENTER YOUR REGISTER NO:</H3>  
+<H3>ENTER YOUR NAME: Santhosh G</H3>  
+<H3>ENTER YOUR REGISTER NO: 212223240152</H3>  
 <H3>EX.NO.4</H3>  
-<H3>DATE:</H3>  
+<H3>DATE: 16-10-2025</H3>  
 
-<H1 ALIGN =CENTER> Create Rectangle Structure with Length and Breadth and Add Method to Calculate Area </H1>  
 
 ## AIM:  
 To create a structure with length and breadth values and calculate the area of a rectangle.  
@@ -37,12 +36,27 @@ STEP 4: Call the `area` method and print the calculated value of area of the rec
 ## PROGRAM:  
 ```
 
+struct Rectangle {
+    length: f64,
+    breadth: f64,
+}
 
-// Type Your Code here
+impl Rectangle {
+    fn area(&self) -> f64 {
+        self.length * self.breadth
+    }
+}
 
-
+fn main() {
+    let r = Rectangle { length: 10.0, breadth: 5.0 };
+    println!("Area = {}", r.area());
+}
 
 ```
 ## OUTPUT :
 
+<img width="1108" height="244" alt="image" src="https://github.com/user-attachments/assets/e8ef2f1e-07ff-41ce-b78c-d239349e15a2" />
+
 ## RESULT :
+
+Thus we have successfully implemented a structure called rectangle with length and breath fields and added a method to calculate area of rectangle.
